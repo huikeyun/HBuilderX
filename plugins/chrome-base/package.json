@@ -1,0 +1,31 @@
+{
+    "id": "chrome-base",
+    "name": "chrome-base",
+    "version": "0.0.6.2023032016",
+    "displayName": "chrome-base",
+    "description": "chrome-base",
+    "__category": "Extension",
+    "__from": "HBuilderX",
+    "__private": true,
+    "extensionDependencies": [],
+    "keywords": [
+        "hbuilderx"
+    ],
+    "author": "hbuilderx",
+    "engines": {
+        "HBuilderX": "^3.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "main": "./extension.js",
+    "activationEvents": [
+        "*"
+    ],
+    "contributes": {},
+    "dependencies": {
+        "chrome-remote-interface": "^0.31.3",
+        "source-map-builder": "^0.0.7",
+        "url": "^0.11.0"
+    }
+}

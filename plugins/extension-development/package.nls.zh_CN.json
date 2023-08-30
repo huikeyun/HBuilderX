@@ -1,0 +1,6 @@
+{
+	"extension-development.run": "运行插件",
+	"extension-development.debug": "调试插件",
+	"extension-development.stopRun": "停止运行插件",
+	"extension-development.stopDebug": "停止调试插件"
+}

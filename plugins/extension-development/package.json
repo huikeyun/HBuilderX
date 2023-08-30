@@ -1,0 +1,50 @@
+{
+  "id": "extension-development",
+  "name": "extension-development",
+  "description": "extension-development",
+  "displayName": "extension-development",
+  "version": "1.0.0-2023061620",
+  "publisher": "dcloud",
+  "engines": {
+    "HBuilderX": "^2.7.0"
+  },
+  "__from": "HBuilderX",
+  "__private": true,
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/index.js",
+  "scripts": {},
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "launchers": [
+      {
+        "type": "extension-development-run",
+        "launcherId": "${workspaceFolder}-extension-development",
+        "label": "%extension-development.run%-[${workspaceFolder.name}]",
+        "terminateLabel": "%extension-development.stopRun%-[${workspaceFolder.name}]",
+        "mode": "run",
+        "when": "workspaceFolder.type == 'Extension'",
+        "priority": 2000,
+        "version": 2
+      },
+      {
+        "type": "extension-development-debug",
+        "launcherId": "${workspaceFolder}-extension-development",
+        "label": "%extension-development.debug%-[${workspaceFolder.name}]",
+        "terminateLabel": "%extension-development.stopDebug%-[${workspaceFolder.name}]",
+        "mode": "debug",
+        "when": "workspaceFolder.type == 'Extension'",
+        "priority": 1000,
+        "version": 2
+      }
+    ]
+  },
+  "extensionDependencies": [
+    "plugin-manager"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}

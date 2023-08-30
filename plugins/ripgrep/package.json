@@ -1,0 +1,6 @@
+{
+  "name": "ripgrep",
+  "version": "1.8.0-2023033117",
+  "description": "A module for using ripgrep in a Node project",
+  "__private": true
+}

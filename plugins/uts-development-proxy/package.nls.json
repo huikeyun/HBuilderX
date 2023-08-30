@@ -1,0 +1,16 @@
+{
+    "create.uts.directory.app.android": "[目录] app-android",
+    "create.uts.directory.app.ios": "[目录] app-ios",
+    "create.uts.directory.web": "[目录] web",
+    "create.uts.directory.mp.weixin": "[目录] mp-weixin",
+    "create.uts.directory.mp.alipay": "[目录] mp-alipay",
+    "create.uts.directory.mp.baidu": "[目录] mp-baidu",
+    "create.uts.directory.mp.kuaishou": "[目录] mp-kuaishou",
+    "create.uts.directory.mp.lark": "[目录] mp-lark",
+    "create.uts.directory.mp.qq": "[目录] mp-qq",
+    "create.uts.directory.mp.toutiao": "[目录] mp-toutiao",
+    "create.uts.directory.mp.jd": "[目录] mp-jd",
+    "create.uts.directory.mp.xhs": "[目录] mp-xhs",
+    "create.uts.file": "uts文件",
+    "create.uts.component.file": "uts组件"
+}

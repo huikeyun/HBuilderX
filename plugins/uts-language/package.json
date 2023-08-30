@@ -1,0 +1,56 @@
+{
+    "name": "uts-language",
+    "displayName": "%displayName%",
+    "description": "%description%",
+    "version": "1.0.1",
+    "publisher": "HBuilderX",
+    "license": "MIT",
+    "__private": true,
+    "engines": {
+        "HBuilderX": "^3.6.11"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "uts",
+                "extensions": [
+                    ".uts"
+                ],
+                "aliases": [
+                    "UTS",
+                    "uts"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "uts",
+                "path": "./syntaxes/uts.tmLanguage.json",
+                "scopeName": "source.uts",
+                "unbalancedBracketScopes": [
+                    "keyword.operator.relational",
+                    "storage.type.function.arrow",
+                    "keyword.operator.bitwise.shift",
+                    "meta.brace.angle",
+                    "punctuation.definition.tag"
+                ],
+                "tokenTypes": {
+                    "meta.template.expression": "other",
+                    "meta.template.expression string": "string",
+                    "meta.template.expression comment": "comment",
+                    "entity.name.type.instance.jsdoc": "other",
+                    "entity.name.function.tagged-template": "other",
+                    "meta.import string.quoted": "other",
+                    "variable.other.jsdoc": "other"
+                }
+            }
+        ],
+        "snippets": [
+            {
+              "language": "uts",
+              "path": "./snippets/uts_condition_comment.json"
+            }
+        ]
+    }
+}

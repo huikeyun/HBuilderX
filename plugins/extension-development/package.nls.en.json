@@ -1,0 +1,6 @@
+{
+	"extension-development.run": "Run Extension",
+	"extension-development.debug": "Debug Extension",
+	"extension-development.stopRun": "Stop Run Extension",
+	"extension-development.stopDebug": "Stop Run Extension"
+}

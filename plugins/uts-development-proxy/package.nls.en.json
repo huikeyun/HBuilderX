@@ -1,0 +1,16 @@
+{
+    "create.uts.directory.app.android": "[Folder] app-android",
+    "create.uts.directory.app.ios": "[Folder] app-ios",
+    "create.uts.directory.web": "[Folder] web",
+    "create.uts.directory.mp.weixin": "[Folder] mp-weixin",
+    "create.uts.directory.mp.alipay": "[Folder] mp-alipay",
+    "create.uts.directory.mp.baidu": "[Folder] mp-baidu",
+    "create.uts.directory.mp.kuaishou": "[Folder] mp-kuaishou",
+    "create.uts.directory.mp.lark": "[Folder] mp-lark",
+    "create.uts.directory.mp.qq": "[Folder] mp-qq",
+    "create.uts.directory.mp.toutiao": "[Folder] mp-toutiao",
+    "create.uts.directory.mp.jd": "[Folder] mp-jd",
+    "create.uts.directory.mp.xhs": "[Folder] mp-xhs",
+    "create.uts.file": "uts file",
+    "create.uts.component.file": "uts component file"
+}

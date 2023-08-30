@@ -1,0 +1,9 @@
+{
+    "configurationFileInfos.jsbeautifyrc.js.description": "自定义全局jsbeautify格式化规则",
+	"format.description":"",
+	"format.displayName":"Beautify(内置)",
+	"properties.beautify.css.scope.description":"自定义CSS格式化器的生效文件范围",
+	"properties.beautify.javascript.scope.description":"自定义JavaScript格式化器的生效文件范围",
+	"properties.beautify.html.scope.description":"自定义HTML格式化器的生效文件范围",
+	"properties.beautify.useProjectConfigFile.description":"优先使用项目下的.jsbeautifyrc配置文件"
+}

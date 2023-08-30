@@ -1,0 +1,104 @@
+{
+  "id": "uniapp-extension",
+  "name": "uniapp运行",
+  "description": "uniapp运行",
+  "displayName": "uniapp运行",
+  "version": "0.0.10.2023040319",
+  "publisher": "HBuilderX",
+  "__private": true,
+  "engines": {
+    "HBuilderX": "^3.6.10"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension",
+  "activationEvents": [
+    "onLaunch:uni-app:app-android",
+    "onLaunch:uni-app:app-ios",
+    "onLaunch:uni-app:mp-weixin",
+    "onLaunch:uni-app:mp-baidu",
+    "onLaunch:uni-app:mp-alipay",
+    "onLaunch:uni-app:mp-toutiao",
+    "onLaunch:uni-app:mp-qq",
+    "onLaunch:uni-app:mp-360",
+    "onLaunch:uni-app:quickapp-webview-huawei",
+    "onLaunch:uni-app:quickapp-webview-union",
+    "onLaunch:uni-app:mp-kuaishou",
+    "onLaunch:uni-app:mp-lark",
+    "onLaunch:uni-app:mp-jd"
+  ],
+  "contributes": {
+    "launchers": [
+      {
+        "type": "uni-app:app-android",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:app-ios",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-weixin",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-baidu",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-alipay",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-toutiao",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-qq",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-360",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:quickapp-webview-huawei",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:quickapp-webview-union",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-kuaishou",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-lark",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-jd",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      }
+    ]
+  },
+  "extensionDependencies": [
+    "plugin-manager"
+  ],
+  "dependencies": {}
+}

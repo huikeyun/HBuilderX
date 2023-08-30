@@ -1,0 +1,214 @@
+{
+	"id": "uts-development-proxy",
+	"name": "uts-development-proxy",
+	"description": "uts-development-proxy",
+	"displayName": "uts-development-proxy",
+	"version": "1.0.3.2023011618",
+	"publisher": "dcloud",
+	"engines": {
+		"HBuilderX": "^3.6.9"
+	},
+	"__from": "HBuilderX",
+	"__private": true,
+	"categories": [
+		"Other"
+	],
+	"main": "./extension.js",
+	"scripts": {},
+	"activationEvents": [
+		"*"
+	],
+	"contributes": {
+        "expressions": {
+			"utssdkDirectory": "workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/utssdk$/",
+			"rootUtssdkDirectory": "workspaceFolderRelativePath =~ /^utssdk\\/[a-zA-Z0-9-_]+$/",
+			"srcUtssdkDirectory": "workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/utssdk$/",
+			"srcUootUtssdkDirectory": "workspaceFolderRelativePath =~ /^src\\/utssdk\\/[a-zA-Z0-9-_]+$/",
+            "hasandroidPlatformDirectory": "file.exists <- '${utssdkDir}/app-android'",
+            "hasiosPlatformDirectory": "file.exists <- '${utssdkDir}/app-ios'",
+            "haswebPlatformDirectory": "file.exists <- '${utssdkDir}/web'",
+            "hasweixinPlatformDirectory": "file.exists <- '${utssdkDir}/mp-weixin'",
+            "hasalipayPlatformDirectory": "file.exists <- '${utssdkDir}/mp-alipay'",
+            "hasbaiduPlatformDirectory": "file.exists <- '${utssdkDir}/mp-baidu'",
+            "haskuaishouPlatformDirectory": "file.exists <- '${utssdkDir}/mp-kuaishou'",
+            "haslarkPlatformDirectory": "file.exists <- '${utssdkDir}/mp-lark'",
+            "hasqqPlatformDirectory": "file.exists <- '${utssdkDir}/mp-qq'",
+            "hastoutiaoPlatformDirectory": "file.exists <- '${utssdkDir}/mp-toutiao'",
+            "hasjdPlatformDirectory": "file.exists <- '${utssdkDir}/mp-jd'",
+            "hasxhsPlatformDirectory": "file.exists <- '${utssdkDir}/mp-xhs'",
+            "utssdkDirSubs": "workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/utssdk/",
+            "rootUtssdkDirSubs": "workspaceFolderRelativePath =~ /^utssdk\\/.*/",
+            "srcUtssdkDirSubs": "workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/utssdk/",
+            "srcRootUtssdkDirSubs": "workspaceFolderRelativePath =~ /^src\\/utssdk\\/.*/",
+            "utssdkSubsDir": "workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/utssdk\\/.+$/",
+            "rootUtssdkSubsDir": "workspaceFolderRelativePath =~ /^utssdk\\/[a-zA-Z0-9-_]+\\/.+$/",
+            "srcUtssdkSubsDir": "workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/utssdk\\/.+$/",
+            "srcRootUtssdkSubsDir": "workspaceFolderRelativePath =~ /^src\\/utssdk\\/[a-zA-Z0-9-_]+\\/.+$/"
+		},
+		"commands": [
+			{
+				"command": "create.uts.directory.app.android",
+				"title": "%create.uts.directory.app.android%"
+			},
+            {
+            	"command": "create.uts.directory.app.ios",
+            	"title": "%create.uts.directory.app.ios%"
+            },
+            {
+            	"command": "create.uts.directory.web",
+            	"title": "%create.uts.directory.web%"
+            },
+            {
+            	"command": "create.uts.directory.mp.weixin",
+            	"title": "%create.uts.directory.mp.weixin%"
+            },
+            {
+            	"command": "create.uts.directory.mp.alipay",
+            	"title": "%create.uts.directory.mp.alipay%"
+            },
+            {
+            	"command": "create.uts.directory.mp.baidu",
+            	"title": "%create.uts.directory.mp.baidu%"
+            },
+            {
+            	"command": "create.uts.directory.mp.kuaishou",
+            	"title": "%create.uts.directory.mp.kuaishou%"
+            },
+            {
+            	"command": "create.uts.directory.mp.lark",
+            	"title": "%create.uts.directory.mp.lark%"
+            },
+            {
+            	"command": "create.uts.directory.mp.qq",
+            	"title": "%create.uts.directory.mp.qq%"
+            },
+            {
+            	"command": "create.uts.directory.mp.toutiao",
+            	"title": "%create.uts.directory.mp.toutiao%"
+            },
+            {
+            	"command": "create.uts.directory.mp.jd",
+            	"title": "%create.uts.directory.mp.jd%"
+            },
+            {
+				"command": "create.uts.directory.mp.xhs",
+				"title": "%create.uts.directory.mp.xhs%"
+			},
+            {
+            	"command": "create.uts.file",
+            	"title": "%create.uts.file%"
+            },
+            {
+            	"command": "create.uts.component.file",
+            	"title": "%create.uts.component.file%"
+            }
+		],
+		"menus": {
+			"newWizard/context": [
+				{
+					"command": "create.uts.directory.app.android",
+					"group": "ext_dir",
+					"when": "!expression.hasandroidPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+				},
+				{
+					"command": "create.uts.directory.app.ios",
+					"group": "ext_dir",
+					"when": "!expression.hasiosPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+				},
+                {
+                	"command": "create.uts.directory.web",
+                	"group": "ext_dir",
+                	"when": "!expression.haswebPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+                },
+				{
+					"command": "create.uts.directory.mp.weixin",
+					"group": "ext_dir",
+					"when": "!expression.hasweixinPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+				},
+				{
+					"command": "create.uts.directory.mp.alipay",
+					"group": "ext_dir",
+					"when": "!expression.hasalipayPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+				},
+				{
+					"command": "create.uts.directory.mp.baidu",
+					"group": "ext_dir",
+					"when": "!expression.hasbaiduPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+				},
+				{
+					"command": "create.uts.directory.mp.kuaishou",
+					"group": "ext_dir",
+					"when": "!expression.haskuaishouPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+				},
+				{
+					"command": "create.uts.directory.mp.lark",
+					"group": "ext_dir",
+					"when": "!expression.haslarkPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+				},
+				{
+					"command": "create.uts.directory.mp.qq",
+					"group": "ext_dir",
+					"when": "!expression.hasqqPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+				},
+				{
+					"command": "create.uts.directory.mp.toutiao",
+					"group": "ext_dir",
+					"when": "!expression.hastoutiaoPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+				},
+                {
+                	"command": "create.uts.directory.mp.jd",
+                	"group": "ext_dir",
+                	"when": "!expression.hasjdPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+                },
+                {
+                	"command": "create.uts.directory.mp.xhs",
+                	"group": "ext_dir",
+                	"when": "!expression.hasxhsPlatformDirectory && explorerResourceCount == 1 && (expression.utssdkDirectory || expression.rootUtssdkDirectory || expression.srcUtssdkDirectory || expression.srcUootUtssdkDirectory)"
+                },
+                {
+                	"command": "create.uts.file",
+                	"group": "ext_file",
+                	"when": "explorerResourceCount == 1 && (expression.utssdkDirSubs || expression.rootUtssdkDirSubs || expression.srcUtssdkDirSubs || expression.srcRootUtssdkDirSubs)"
+                },
+                {
+                	"command": "create.uts.component.file",
+                	"group": "ext_file",
+                	"when": "explorerResourceCount == 1 && (expression.utssdkSubsDir || expression.rootUtssdkSubsDir || expression.srcUtssdkSubsDir || expression.srcRootUtssdkSubsDir)"
+                },
+				{
+					"group": "z_commands"
+				}
+			]
+		},
+        "resourceVariableResolvers": [
+            {
+                "name": "utssdkDir",
+                "resolver": [
+                    {
+                        "type": "regex",
+                        "match": "(${workspaceFolder}/uni_modules/[^/]+/utssdk)",
+                        "valueReference": 1
+                    },
+                    {
+                        "type": "regex",
+                        "match": "(${workspaceFolder}/utssdk/[^/]+)",
+                        "valueReference": 1
+                    },
+                    {
+                        "type": "regex",
+                        "match": "(${workspaceFolder}/src/uni_modules/[^/]+/utssdk)",
+                        "valueReference": 1
+                    },
+                    {
+                        "type": "regex",
+                        "match": "(${workspaceFolder}/src/utssdk/[^/]+)",
+                        "valueReference": 1
+                    }
+                ]
+            }
+        ]
+	},
+	"extensionDependencies": [
+		"plugin-manager"
+	]
+}

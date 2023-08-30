@@ -1,0 +1,1 @@
+{"i18n":{"messages":["正在启动HBuilderX...","HBuilderX已退出","插件开发","插件开发","当前操作依赖插件【$1】,请安装后再试。","安装(&O)","取消(&C)","插件名称【$1】不合法，仅支持英文字母和数字，请修改插件名称后重新运行。","当前已安装插件列表中已包含名称为【$1】的插件，请更换其他名称。"],"keys":["hBuilderXStart","hBuilderXExit","pluginRun","pluginDebug","pluginDependent","pluginOk","pluginCancel","pluginSameName","pluginNameNonSpecification"]},"index":{"messages":[],"keys":[]}}

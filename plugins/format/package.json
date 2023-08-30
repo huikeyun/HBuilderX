@@ -1,0 +1,82 @@
+{
+  "id": "format",
+  "name": "format",
+  "description": "%format.description%",
+  "displayName": "%format.displayName%",
+  "version": "1.3.0-2023041817",
+  "publisher": "dcloud",
+  "engines": {
+    "HBuilderX": "^3.6.9"
+  },
+  "__from": "HBuilderX",
+  "__private": true,
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/index",
+  "scripts": {},
+  "contributes": {
+    "languages": [
+      {
+        "id": "json",
+        "aliases": [
+          "JSON"
+        ],
+        "extensions": [
+          ".jsbeautifyrc"
+        ]
+      }
+    ],
+    "_formator": {
+      "name": "%format.displayName%",
+      "class": "out/main.js",
+      "filetypes": [
+        "json",
+        "js",
+        "ts",
+        "uts",
+        "njs",
+        "html",
+        "css",
+        "vue",
+        "nvue",
+        "ux",
+        "nml",
+        "nss",
+        "wxml",
+        "qml",
+        "qss",
+        "wxss",
+        "sjs",
+        "ttml",
+        "ttss",
+        "acss",
+        "swan"
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Beautify Formator",
+      "properties": {
+        "beautify.useProjectConfigFile": {
+          "type": "boolean",
+          "default": true,
+          "description": "%properties.beautify.useProjectConfigFile.description%"
+        }
+      }
+    }
+  },
+  "configurationFiles": [
+    "jsbeautifyrc.js"
+  ],
+  "configurationFileInfos": {
+    "jsbeautifyrc.js": {
+      "description": "%configurationFileInfos.jsbeautifyrc.js.description%"
+    }
+  },
+  "extensionDependencies": [
+    "plugin-manager"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
